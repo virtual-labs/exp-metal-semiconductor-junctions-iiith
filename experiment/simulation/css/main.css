@@ -2,28 +2,36 @@
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin: 2px 0;
+    gap: 20px;
+    padding: 10px;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
   }
   
   .navigation a {
-    padding: 10px 20px;
+    color: black;
     text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
   }
   
   .navigation a:hover {
-    background-color: #f0f0f0;
+    background-color: #97d23d;;
   }
   
   .navigation a.active {
-    background-color: #007bff;
-    color: white;
-    border-color: #0056b3;
+    background-color: #97d23d;;
   }
+.header {
+    text-align: center;
+    margin-bottom: 1px;
+    color: #2c3e50;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schottky Diode Simulation</title>
+  <link rel="stylesheet" href="./css/sim.css">
+</head>
+<body>
+  <nav class="navigation">
+    <a href="sim.html" class="active">Simulation</a>
+    <a href="index.html">Exercise</a>
+    
+  </nav>
+
+  <div class="container">
+    <h1>Schottky Diode Simulation</h1>
+    
+    <!-- Input Fields -->
+    <div class="input-section">
+      <label for="phiM">Metal Work Function (Φ<sub>M</sub>) in eV:</label>
+      <input type="number" id="phiM" value="4.7" step="0.1">
+      
+      <label for="chi">Semiconductor Electron Affinity (χ) in eV:</label>
+      <input type="number" id="chi" value="4.05" step="0.1">
+      
+      <label for="temperature">Temperature (T) in K:</label>
+      <input type="number" id="temperature" value="300" step="10">
+      
+      <button onclick="runSimulation()">Run Simulation</button>
+    </div>
+
+    <!-- Results and Plot Sections -->
+    <div class="results-plot-container">
+      <div class="results-section">
+        <h2>Results</h2>
+        <p>Schottky Barrier Height (Φ<sub>B</sub>): <span id="phiBResult"></span> eV</p>
+        <p>Saturation Current (I<sub>s</sub>): <span id="isResult"></span> A</p>
+      </div>
+
+      <div class="plot-section">
+        <h2>I-V Characteristics</h2>
+        <canvas id="ivPlot"></canvas>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript to set the active class based on the current page
+    const currentPage = window.location.pathname.split("/").pop(); // Get the current page filename
+    const navLinks = document.querySelectorAll(".navigation a");
+
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  </script>
+  <script src="./js/sim.js"></script>
+</body>
+</html>
