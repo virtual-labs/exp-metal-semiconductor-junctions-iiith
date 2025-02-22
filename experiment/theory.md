@@ -13,7 +13,7 @@ Doping is essential for forming junctions, which lead to various electronic func
 
 ## Metal-Semiconductor Junctions
 When a metal comes into contact with a semiconductor, different types of junctions can form based on their electrical behavior and energy band alignment.
-
+![](./images/image.png)
 ### Ohmic Contacts
 - **Definition**: Ohmic contacts provide a low-resistance electrical connection, allowing current to flow easily in both directions without significant rectification. The current-voltage (I-V) characteristics are linear and symmetric about the origin.
 
