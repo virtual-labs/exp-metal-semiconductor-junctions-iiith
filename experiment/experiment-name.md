@@ -1,1 +1,1 @@
-## Theory of Metal-Semiconductor and Semiconductor Heterojunctions
+## Metal-Semiconductor and Semiconductor Heterojunctions

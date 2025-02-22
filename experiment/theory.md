@@ -25,7 +25,7 @@ When a metal comes into contact with a semiconductor, different types of junctio
 
 ### Schottky Barriers
 - **Definition**: A Schottky barrier is formed when a metal with a higher work function contacts a semiconductor, creating a rectifying junction. This results in a potential energy barrier that controls carrier injection and flow.
-
+Formation- height of schottky barrier  is determined by the difference between the metal work function and the semiconductor electron affinity :
 ![](./images/q1.png)
 
   - For n-type semiconductors, a large Schottky barrier restricts electron flow from the metal into the semiconductor, leading to rectifying behavior.
@@ -39,7 +39,7 @@ When a metal comes into contact with a semiconductor, different types of junctio
 
 A lower contact resistance improves device efficiency by minimizing power loss and heat generation.
 
-### Current Density ($J$):
+### Current Density (J):
 The current density through a semiconductor junction is given by:
 
 ![](./images/q3.png)
