@@ -16,11 +16,12 @@ When a metal comes into contact with a semiconductor, different types of junctio
 ![](./images/image.png)
 ### Ohmic Contacts
 - **Definition**: Ohmic contacts provide a low-resistance electrical connection, allowing current to flow easily in both directions without significant rectification. The current-voltage (I-V) characteristics are linear and symmetric about the origin.
-
+he current is directly proportional to the potential across the junction and it is symmetric about the origin.Thus, ohmic contacts are non-rectifying and show negligible voltage drop and resistance irrespective of the direction and magnitude of current. When the semiconductor has a higher work function than that of metal, then the junction formed is called the Ohmic junction.
 - **Formation**: Achieving an ohmic contact typically requires heavy doping near the interface to ensure sufficient charge carriers are available for conduction. Techniques such as thermal annealing can improve the contact quality by reducing defects and enhancing carrier mobility.
   - High doping concentrations, typically above $10^{19}$ cm$^{-3}$, ensure a negligible energy barrier.
   - Metal selection is crucial—metals with a work function close to the semiconductor's electron affinity help minimize contact resistance.
-
+- Good Ohmic Contact: When ρc is very small (high doping, clean interface), even a small voltage difference can result in a large current density.
+- Poor Ohmic Contact: If ρc is large (due to poor interface quality, low doping, or barrier formation), the current density will be small, indicating more resistance at the interface.
 - **Example**: An ohmic contact can be formed between heavily doped n-type silicon and metals like aluminum. The high doping level provides an abundance of free electrons, while aluminum facilitates easy electron flow, resulting in a junction that behaves like a simple resistor.
 
 ### Schottky Barriers
@@ -65,5 +66,5 @@ There are three types of band alignment in semiconductor heterojunctions:
 - Contact resistance and doping levels play crucial roles in determining the electrical characteristics of metal-semiconductor interfaces.
 - **Semiconductor heterojunctions** allow for engineered band alignments, enabling advanced applications in optoelectronics and high-speed transistors.
 
-Understanding these junctions is fundamental to semiconductor device design, impacting a wide range of modern electronic and photonic technologies.
+They are fast switching devices with low forward voltage drop. Used in power rectifiers, RF detectors, and clamping circuits. 
 
