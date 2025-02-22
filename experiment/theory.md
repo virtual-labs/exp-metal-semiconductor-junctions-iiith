@@ -26,11 +26,7 @@ When a metal comes into contact with a semiconductor, different types of junctio
 ### Schottky Barriers
 - **Definition**: A Schottky barrier is formed when a metal with a higher work function contacts a semiconductor, creating a rectifying junction. This results in a potential energy barrier that controls carrier injection and flow.
 
-- **Formation**: The height of the Schottky barrier ($\Phi_B$) is determined by the difference between the metal work function ($\Phi_M$) and the semiconductor electron affinity ($\chi$):
-  
-  ```math
-  \Phi_B = \Phi_M - \chi
-  ```
+![](./images/q1.png)
 
   - For n-type semiconductors, a large Schottky barrier restricts electron flow from the metal into the semiconductor, leading to rectifying behavior.
   - For p-type semiconductors, a similar effect occurs, but with holes as the majority carriers.
@@ -39,30 +35,14 @@ When a metal comes into contact with a semiconductor, different types of junctio
 
 ## Important Formulas
 
-### Contact Resistance ($R_c$):
-The contact resistance quantifies how easily carriers move across the junction:
-
-```math
-R_c = \frac{1}{q \cdot n \cdot A \cdot \mu}
-```
-
-where:
-- $q$: Charge of an electron  
-- $n$: Carrier concentration  
-- $A$: Contact area  
-- $\mu$: Carrier mobility  
+![](./images/q2.png)
 
 A lower contact resistance improves device efficiency by minimizing power loss and heat generation.
 
 ### Current Density ($J$):
 The current density through a semiconductor junction is given by:
 
-```math
-J = q \cdot n \cdot \mu \cdot E
-```
-
-where:
-- $E$: Electric field  
+![](./images/q3.png)
 
 This equation shows that current flow depends on both charge carrier concentration and mobility.
 
