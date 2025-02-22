@@ -2,18 +2,18 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Explain the physical mechanisms that lead to the formation of an energy barrier at a metal-semiconductor junction. How does this barrier affect carrier injection?",
+      "question": "What physical mechanisms lead to the formation of an energy barrier at a metal-semiconductor junction, and how does this barrier influence carrier injection?",
       "answers": {
-        "a": "The energy barrier is formed due to the difference in work functions, which prevents carrier injection.",
-        "b": "The energy barrier is created by the alignment of Fermi levels, allowing for efficient carrier injection.",
-        "c": "The barrier is a result of thermal effects, which have no impact on carrier injection.",
-        "d": "The energy barrier is formed by the depletion region, which enhances carrier injection."
+        "a": "The energy barrier forms due to the difference in work functions, which influences carrier injection.",
+        "b": "The energy barrier is created by Fermi level alignment, allowing for efficient carrier injection.",
+        "c": "The barrier is caused by thermal effects, which have no significant impact on carrier injection.",
+        "d": "The energy barrier is formed by the depletion region, which restricts carrier injection under equilibrium conditions."
       },
       "explanations": {
-        "a": "Incorrect. The barrier is formed due to work function differences, but it can still allow for carrier injection under certain conditions.",
-        "b": "Incorrect. While Fermi level alignment is important, it does not directly lead to an energy barrier.",
-        "c": "Incorrect. Thermal effects can influence the barrier but are not the primary cause.",
-        "d": "Correct! The depletion region creates an energy barrier that can affect carrier injection depending on the junction type."
+        "a": "Incorrect. The work function difference contributes to barrier formation, but charge redistribution and band bending also play a role.",
+        "b": "Incorrect. Fermi level alignment occurs at equilibrium, but it does not directly create an energy barrier; instead, band bending leads to the barrier.",
+        "c": "Incorrect. Thermal effects can influence carrier behavior but are not the primary cause of barrier formation.",
+        "d": "Correct! The depletion region leads to band bending, creating an energy barrier that restricts carrier injection under equilibrium conditions."
       },
       "correctAnswer": "d",
       "difficulty": "hard"
