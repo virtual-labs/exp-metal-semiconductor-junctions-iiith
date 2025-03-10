@@ -36,7 +36,7 @@
       "difficulty": "hard"
     },
     {
-      "question": "What are the consequences of using a metal with a significantly higher work function than the semiconductor in forming an ohmic contact?",
+      "question": "What are the consequences of using a metal with a significantly higher work function than the n-type semiconductor in forming an ohmic contact?",
       "answers": {
         "a": "It will always result in a low contact resistance.",
         "b": "It may lead to a rectifying contact instead of an ohmic contact.",

@@ -1,1 +1,1 @@
-## Metal-Semiconductor and Semiconductor Heterojunctions
+## Metal-Semiconductor junctions
