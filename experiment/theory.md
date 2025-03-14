@@ -21,14 +21,14 @@ he current is directly proportional to the potential across the junction and it 
 - **Formation**: Achieving an ohmic contact typically requires heavy doping near the interface to ensure sufficient charge carriers are available for conduction. Techniques such as thermal annealing can improve the contact quality by reducing defects and enhancing carrier mobility.
  
   - Metal selection is crucial—metals with a work function close to the semiconductor's electron affinity help minimize contact resistance.
-- Good Ohmic Contact: When ρ is very small (high doping, clean interface), even a small voltage difference can result in a large current density.
+- Good Ohmic Contact: When ρ (resistivity) is very small (high doping, clean interface), even a small voltage difference can result in a large current density.
 - Poor Ohmic Contact: If ρ is large (due to poor interface quality, low doping, or barrier formation), the current density will be small, indicating more resistance at the interface.
 - **Example**: An ohmic contact can be formed between heavily doped n-type silicon and metals like aluminum. The high doping level provides an abundance of free electrons, while aluminum facilitates easy electron flow, resulting in a junction that behaves like a simple resistor.
 
 ### Schottky Barriers
 - **Definition**: A Schottky barrier is formed when a metal with a higher work function contacts a n-type semiconductor, or metal with lower work function contacts with p-type semiconductor with higer work function  creating a rectifying junction. This results in a potential energy barrier that controls carrier injection and flow.
 Formation- height of schottky barrier  is determined by the difference between the metal work function and the semiconductor electron affinity :
-![](./images/q1.png)
+![Equation 1: ](./images/q1.png)
 
   - For n-type semiconductors, a large Schottky barrier restricts electron flow from the metal into the semiconductor, leading to rectifying behavior.
   - For p-type semiconductors, a similar effect occurs, but with holes as the majority carriers.
