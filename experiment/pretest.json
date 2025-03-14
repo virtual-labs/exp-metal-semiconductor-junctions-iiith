@@ -70,23 +70,6 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What is the relationship between current density (J) and electric field (E) in a semiconductor?",
-      "answers": {
-        "a": "J is independent of E.",
-        "b": "J is directly proportional to E.",
-        "c": "J is inversely proportional to E.",
-        "d": "J is equal to E."
-      },
-      "explanations": {
-        "a": "Incorrect. Current density is affected by the electric field.",
-        "b": "Correct! Current density is directly proportional to the electric field.",
-        "c": "Incorrect. This is not the correct relationship.",
-        "d": "Incorrect. Current density is not equal to the electric field."
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
       "question": "What is the significance of the work function in the context of metal-semiconductor junctions?",
       "answers": {
         "a": "It determines the thermal conductivity of the metal.",

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PN Junction Matching Exercise</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
     <style>
       /* New styles for responsive images */
       .questions img,
@@ -36,12 +37,28 @@
   </head>
   <body>
     <header class="header"></header>
-    <nav class="navigation">
+    <!-- <nav class="navigation">
       <a href="sim.html" class="active">Simulation</a>
       <a href="index.html">Exercise</a>
      
-    </nav>
+    </nav> -->
+<div class="column">
+    <div class="v-tabs">
+        <ul>
 
+            <li id="Task1"  onclick="window.location.href = 'sim.html';">
+                <a>
+                    Simulation
+                </a>
+            </li>
+            <li  id="Task2" class="is-active">
+                <a>
+                    Exercise
+                </a>
+            </li>
+          
+        </ul>
+    </div>
     <div class="content">
       <h2>PN Junction Matching Exercise</h2>
       <p>
