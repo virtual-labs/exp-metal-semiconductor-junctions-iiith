@@ -1,1 +1,1 @@
-## Metal-Semiconductor junctions
+## Semiconductor Metal Junction (MS)
