@@ -1,1 +1,1 @@
-## Metal-Semiconductor junctions
+## Metal-Semiconductor Junctions
