@@ -1,1 +1,0 @@
-### [BYU](https://cleanroom.byu.edu/ohmic-schottky)
