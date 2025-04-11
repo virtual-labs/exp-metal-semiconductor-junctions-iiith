@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary characteristic of an ohmic contact?",
+      "answers": {
+        "a": "It has a high resistance.",
+        "b": "It allows current to flow easily in both directions.",
+        "c": "It only conducts current in one direction.",
+        "d": "It has a nonlinear I-V relationship."
+      },
+      "explanations": {
+        "a": "Incorrect. Ohmic contacts are defined by low resistance.",
+        "b": "Correct! Ohmic contacts facilitate easy current flow in both directions.",
+        "c": "Incorrect. This describes a rectifying contact, not an ohmic contact.",
+        "d": "Incorrect. Ohmic contacts exhibit a linear I-V relationship."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What role does doping play in the formation of ohmic contacts?",
+      "answers": {
+        "a": "It increases the resistance of the contact.",
+        "b": "It provides sufficient charge carriers at the interface.",
+        "c": "It has no effect on the contact properties.",
+        "d": "It only affects the thermal stability of the junction."
+      },
+      "explanations": {
+        "a": "Incorrect. Doping is used to lower resistance.",
+        "b": "Correct! Doping increases the number of charge carriers, facilitating current flow.",
+        "c": "Incorrect. Doping is crucial for contact properties.",
+        "d": "Incorrect. Doping affects electrical properties, not just thermal stability."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which metal is commonly used to form ohmic contacts with n-type silicon?",
+      "answers": {
+        "a": "Gold",
+        "b": "Aluminum",
+        "c": "Copper",
+        "d": "Silver"
+      },
+      "explanations": {
+        "a": "Incorrect. Gold is not typically used for ohmic contacts with n-type silicon.",
+        "b": "Correct! Aluminum is widely used due to its good conductivity and compatibility.",
+        "c": "Incorrect. Copper can form good contacts but is less common than aluminum.",
+        "d": "Incorrect. Silver is not commonly used for this purpose."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the effect of temperature on the contact resistance of ohmic contacts?",
+      "answers": {
+        "a": "Temperature has no effect on contact resistance.",
+        "b": "Higher temperatures generally increase contact resistance.",
+        "c": "Higher temperatures can decrease contact resistance.",
+        "d": "Contact resistance is only affected by the material used."
+      },
+      "explanations": {
+        "a": "Incorrect. Temperature can significantly affect contact resistance.",
+        "b": "Incorrect. Higher temperatures can lead to increased carrier mobility.",
+        "c": "Correct! Higher temperatures can decrease contact resistance due to increased carrier mobility.",
+        "d": "Incorrect. While material affects resistance, temperature also plays a role."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the significance of the work function in the context of metal-semiconductor junctions?",
+      "answers": {
+        "a": "It determines the thermal conductivity of the metal.",
+        "b": "It affects the barrier height at the junction.",
+        "c": "It has no relevance to the junction properties.",
+        "d": "It only influences the mechanical properties of the junction."
+      },
+      "explanations": {
+        "a": "Incorrect. The work function is not related to thermal conductivity.",
+        "b": "Correct! The work function influences the barrier height and thus the contact behavior.",
+        "c": "Incorrect. The work function is crucial for understanding junction properties.",
+        "d": "Incorrect. The work function does not influence mechanical properties."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
