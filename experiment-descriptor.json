@@ -51,6 +51,14 @@
       "content-type": "assesment"
     },
     {
+      "target": "didyouknow.html",
+      "source": "simulation/didyouknow.html",
+      "label": "Fact Vault",
+      "unit-type": "task",
+      "content-type": "simulation",
+      "additional-sources": []
+    },
+    {
       "target": "references.html",
       "source": "references.md",
       "label": "References",
