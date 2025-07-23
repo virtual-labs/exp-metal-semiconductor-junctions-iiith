@@ -2,106 +2,157 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What physical mechanisms lead to the formation of an energy barrier at a metal-semiconductor junction, and how does this barrier influence carrier injection?",
+      "question": "1. What is the work function of a material?",
       "answers": {
-        "a": "The energy barrier forms due to the difference in work functions, which influences carrier injection.",
-        "b": "The energy barrier is created by Fermi level alignment, allowing for efficient carrier injection.",
-        "c": "The barrier is caused by thermal effects, which have no significant impact on carrier injection.",
-        "d": "The energy barrier is formed by the depletion region, which restricts carrier injection under equilibrium conditions."
+        "a": "The energy required to break a covalent bond",
+        "b": "The energy required to move an electron from the conduction band to the vacuum level",
+        "c": "The bandgap energy of the material",
+        "d": "The energy to create an electron-hole pair"
       },
       "explanations": {
-        "a": "Incorrect. The work function difference contributes to barrier formation, but charge redistribution and band bending also play a role.",
-        "b": "Incorrect. Fermi level alignment occurs at equilibrium, but it does not directly create an energy barrier; instead, band bending leads to the barrier.",
-        "c": "Incorrect. Thermal effects can influence carrier behavior but are not the primary cause of barrier formation.",
-        "d": "Correct! The depletion region leads to band bending, creating an energy barrier that restricts carrier injection under equilibrium conditions."
-      },
-      "correctAnswer": "d",
-      "difficulty": "hard"
-    },
-    {
-      "question": "Discuss the impact of surface states on the performance of ohmic contacts. How do these states influence the contact resistance?",
-      "answers": {
-        "a": "Surface states have no effect on contact resistance.",
-        "b": "Surface states can trap carriers, increasing contact resistance.",
-        "c": "Surface states enhance carrier mobility, reducing contact resistance.",
-        "d": "Surface states only affect the thermal properties of the junction."
-      },
-      "explanations": {
-        "a": "Incorrect. Surface states can significantly impact contact performance.",
-        "b": "Correct! Surface states can trap carriers, leading to increased contact resistance.",
-        "c": "Incorrect. Surface states typically hinder mobility rather than enhance it.",
-        "d": "Incorrect. Surface states primarily influence electrical properties, not thermal."
+        "a": "Incorrect. That's bond energy, not work function.",
+        "b": "Correct. Work function is defined as the minimum energy needed to remove an electron from the Fermi level to vacuum.",
+        "c": "Incorrect. That’s the bandgap energy.",
+        "d": "Incorrect. That's related to carrier generation, not work function."
       },
       "correctAnswer": "b",
-      "difficulty": "hard"
+      "difficulty": "beginner"
     },
     {
-      "question": "What are the consequences of using a metal with a significantly higher work function than the n-type semiconductor in forming an ohmic contact?",
+      "question": "2. What is electron affinity in a semiconductor?",
       "answers": {
-        "a": "It will always result in a low contact resistance.",
-        "b": "It may lead to a rectifying contact instead of an ohmic contact.",
-        "c": "It has no impact on the contact properties.",
-        "d": "It will improve the thermal stability of the junction."
+        "a": "The energy gap between conduction and valence bands",
+        "b": "The energy required to excite an electron from the valence to conduction band",
+        "c": "The energy difference between the conduction band and vacuum level",
+        "d": "The energy required to ionize a dopant"
       },
       "explanations": {
-        "a": "Incorrect. A higher work function does not guarantee low contact resistance.",
-        "b": "Correct! A significantly higher work function can create a rectifying contact.",
-        "c": "Incorrect. The work function directly affects contact properties.",
-        "d": "Incorrect. While it may influence thermal stability, the primary concern is the electrical behavior."
-      },
-      "correctAnswer": "b",
-      "difficulty": "hard"
-    },
-    {
-      "question": "Analyze the role of temperature in the behavior of ohmic contacts. How does temperature variation affect the charge carrier dynamics at the junction?",
-      "answers": {
-        "a": "Temperature has no effect on charge carrier dynamics.",
-        "b": "Higher temperatures increase carrier concentration and mobility, reducing contact resistance.",
-        "c": "Lower temperatures enhance carrier injection, improving contact performance.",
-        "d": "Temperature only affects the mechanical properties of the junction."
-      },
-      "explanations": {
-        "a": "Incorrect. Temperature significantly influences charge carrier dynamics.",
-        "b": "Correct! Higher temperatures generally increase carrier concentration and mobility, which can reduce contact resistance.",
-        "c": "Incorrect. While lower temperatures can affect dynamics, they typically do not enhance injection.",
-        "d": "Incorrect. Temperature primarily influences electrical properties, not mechanical."
-      },
-      "correctAnswer": "b",
-      "difficulty": "hard"
-    },
-    {
-      "question": "Evaluate the significance of the Schottky barrier in the context of metal-semiconductor junctions. How does it differ from ohmic contacts?",
-      "answers": {
-        "a": "The Schottky barrier is irrelevant to metal-semiconductor junctions.",
-        "b": "The Schottky barrier allows for bidirectional current flow, similar to ohmic contacts.",
-        "c": "The Schottky barrier creates a potential barrier that restricts current flow, unlike ohmic contacts.",
-        "d": "The Schottky barrier is only important for p-type semiconductors."
-      },
-      "explanations": {
-        "a": "Incorrect. The Schottky barrier is a critical concept in understanding junction behavior.",
-        "b": "Incorrect. The Schottky barrier does not allow for bidirectional current flow.",
-        "c": "Correct! The Schottky barrier creates a potential barrier that restricts current flow, contrasting with ohmic contacts.",
-        "d": "Incorrect. The Schottky barrier is relevant for both n-type and p-type semiconductors."
+        "a": "Incorrect. That’s the bandgap.",
+        "b": "Incorrect. That’s excitation energy.",
+        "c": "Correct. Electron affinity is the energy required to move an electron from the conduction band to vacuum level.",
+        "d": "Incorrect. That’s ionization energy."
       },
       "correctAnswer": "c",
-      "difficulty": "hard"
+      "difficulty": "beginner"
     },
     {
-      "question": "What are the implications of using a heavily doped semiconductor for forming ohmic contacts? Discuss the trade-offs involved.",
+      "question": "3. What type of contact is formed when metal work function is less than n-type semiconductor's electron affinity?",
       "answers": {
-        "a": "Heavily doped semiconductors always lead to better contact performance without drawbacks.",
-        "b": "Heavily doped semiconductors can reduce contact resistance but may introduce defects.",
-        "c": "There are no trade-offs; doping level is irrelevant to contact performance.",
-        "d": "Heavily doped semiconductors only improve thermal conductivity."
+        "a": "Schottky contact",
+        "b": "Ohmic contact",
+        "c": "p-n junction",
+        "d": "No contact is formed"
       },
       "explanations": {
-        "a": "Incorrect. While heavy doping can improve performance, it may also introduce issues.",
-        "b": "Correct! Heavily doped semiconductors can lower contact resistance but may introduce defects that affect performance.",
-        "c": "Incorrect. Doping level is crucial for contact performance.",
-        "d": "Incorrect. Doping primarily affects electrical properties, not thermal conductivity."
+        "a": "Incorrect. A Schottky contact is formed when metal work function > semiconductor.",
+        "b": "Correct. Lower metal work function compared to semiconductor forms Ohmic contact with n-type.",
+        "c": "Incorrect. This is not a p-n junction.",
+        "d": "Incorrect. A contact is still formed."
       },
       "correctAnswer": "b",
-      "difficulty": "hard"
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In a Metal-Semiconductor junction with an n-type semiconductor, increasing the forward bias results in:",
+      "answers": {
+        "a": "Wider depletion region and lower current",
+        "b": "Smaller barrier height and increased current",
+        "c": "No change in current",
+        "d": "Breakdown of the junction"
+      },
+      "explanations": {
+        "a": "Incorrect. Forward bias reduces depletion width.",
+        "b": "Correct. Forward bias lowers the potential barrier, increasing carrier injection.",
+        "c": "Incorrect. Current increases significantly under forward bias.",
+        "d": "Incorrect. Breakdown occurs under high reverse bias."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What would happen to the energy band diagram of an n-type MS junction under reverse bias?",
+      "answers": {
+        "a": "Conduction band bends downward",
+        "b": "Valence band shifts closer to Fermi level",
+        "c": "Conduction band bends upward increasing barrier",
+        "d": "Fermi level moves significantly"
+      },
+      "explanations": {
+        "a": "Incorrect. Reverse bias increases potential barrier, not decreases it.",
+        "b": "Incorrect. Valence band is unaffected in this way.",
+        "c": "Correct. Reverse bias bends the conduction band upward, increasing the barrier.",
+        "d": "Incorrect. Fermi level remains flat across the junction in equilibrium."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which factor does **not** directly affect the Schottky barrier height?",
+      "answers": {
+        "a": "Metal work function",
+        "b": "Semiconductor electron affinity",
+        "c": "Semiconductor doping concentration",
+        "d": "Semiconductor dielectric constant"
+      },
+      "explanations": {
+        "a": "Incorrect. Metal work function is key in defining barrier height.",
+        "b": "Incorrect. Electron affinity plays a role.",
+        "c": "Correct. Doping influences width, not barrier height directly.",
+        "d": "Incorrect. Dielectric constant affects capacitance, not barrier height."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. A metal has work function φ<sub>m</sub> = 5.1 eV, and the n-type semiconductor has electron affinity χ = 4.0 eV and E<sub>c</sub> – E<sub>F</sub> = 0.2 eV. What is the Schottky barrier height (φ<sub>Bn</sub>)?",
+      "answers": {
+        "a": "1.1 eV",
+        "b": "0.7 eV",
+        "c": "2.0 eV",
+        "d": "5.3 eV"
+      },
+      "explanations": {
+        "a": "Correct. φ<sub>Bn</sub> = φ<sub>m</sub> – χ = 5.1 – 4.0 = 1.1 eV",
+        "b": "Incorrect. Calculation is off.",
+        "c": "Incorrect. That’s too large.",
+        "d": "Incorrect. Greater than φ<sub>m</sub>, so invalid."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. A metal forms a Schottky junction with a semiconductor. If the temperature increases, how does the reverse saturation current behave?",
+      "answers": {
+        "a": "It increases exponentially",
+        "b": "It stays constant",
+        "c": "It decreases linearly",
+        "d": "It becomes zero"
+      },
+      "explanations": {
+        "a": "Correct. Reverse saturation current increases exponentially with temperature.",
+        "b": "Incorrect. It is temperature dependent.",
+        "c": "Incorrect. Not linear dependence.",
+        "d": "Incorrect. It never becomes zero."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. In the MS junction simulation, varying the doping level affects which of the following most significantly?",
+      "answers": {
+        "a": "The metal's work function",
+        "b": "The width of the depletion region",
+        "c": "The bandgap of the semiconductor",
+        "d": "The vacuum level"
+      },
+      "explanations": {
+        "a": "Incorrect. Metal work function is intrinsic.",
+        "b": "Correct. Higher doping leads to narrower depletion regions.",
+        "c": "Incorrect. Bandgap is a material property, unaffected by doping.",
+        "d": "Incorrect. Vacuum level is a fixed energy reference."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
