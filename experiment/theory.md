@@ -1,5 +1,4 @@
-# Theory of Metal-Semiconductor 
-## Introduction
+
 Metal-semiconductor junctions  form the backbone of modern electronic and optoelectronic devices. These junctions control current flow and charge carrier dynamics, making them fundamental in semiconductor physics and engineering. Understanding their operation, characteristics, and applications is essential for designing efficient electronic components.
 
 ## Semiconductor Basics
