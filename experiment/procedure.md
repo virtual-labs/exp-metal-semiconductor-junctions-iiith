@@ -5,15 +5,9 @@
 ### Objective
 Study the formation of metal-semiconductor junctions and understand equilibrium parameters.
 
-### Workflow
-```mermaid
-graph LR
-    A[🖥️ Access<br/>Equilibrium Tab] --> B[⚙️ Explore<br/>Parameters] --> C[👁️ Observe<br/>Visualization] --> D[📊 Analyze<br/>Results] --> E[🔄 Experiment]
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
+### Procedure Flow
+```
+📱 Open Equilibrium Tab  →  ⚙️ Adjust Parameters  →  👁️ Watch Visualization  →  📊 Analyze Data  →  🔄 Experiment
 ```
 
 ### Steps
@@ -52,21 +46,12 @@ graph LR
 ### Objective
 Understand how external bias affects junction characteristics and current flow.
 
-### Workflow
-```mermaid
-graph LR
-    A[🖥️ Switch to<br/>Biasing Tab] --> B[⚙️ Configure<br/>Parameters] --> C[⚡ Apply<br/>Bias] --> D[👁️ Observe<br/>Effects] --> E[📊 Analyze<br/>Measurements] --> F[📈 I-V Sweep]
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#fff9c4
-    style D fill:#f3e5f5
-    style E fill:#e8f5e9
-    style F fill:#fce4ec
+### Procedure Flow
 ```
-
-**Bias Types:**
-- 🟢 **Forward Bias** (+ve) → Increases current flow
-- 🔴 **Reverse Bias** (-ve) → Blocks current flow
+📱 Open Biasing Tab  →  ⚙️ Set Parameters  →  ⚡ Apply Bias  →  👁️ Watch Effects  →  📊 Measure  →  📈 I-V Sweep
+                                               ↓
+                                    🟢 Forward (+V) or 🔴 Reverse (-V)
+```
 
 ### Steps
 1. **Switch to Biasing Tab**: Click on the "Biasing" tab.
@@ -109,21 +94,12 @@ graph LR
 ### Objective
 Investigate practical applications of metal-semiconductor junctions.
 
-### Workflow
-```mermaid
-graph LR
-    A[🖥️ Navigate to<br/>Applications Tab] --> B[📱 Select<br/>Application] --> C[⚙️ Configure<br/>Settings] --> D[🌊 Observe<br/>Waveforms] --> E[📊 Analyze<br/>Performance]
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
+### Procedure Flow
 ```
-
-**Application Options:**
-- 🔌 **Rectifier** → Converts AC to DC
-- 📡 **Detector** → Detects signals
-- 🔀 **Mixer** → Combines frequencies
+📱 Open Applications Tab  →  🔌 Choose Application  →  ⚙️ Configure  →  🌊 View Waveforms  →  📊 Analyze
+                                     ↓
+                          Rectifier / Detector / Mixer
+```
 
 ### Steps
 1. **Navigate to Applications Tab**: Select the "Applications" tab.
@@ -166,23 +142,12 @@ graph LR
 ### Objective
 Test understanding through interactive challenges and quizzes.
 
-### Workflow
-```mermaid
-graph LR
-    A[🖥️ Access<br/>Challenges Tab] --> B[📝 Select<br/>Category] --> C[✍️ Answer<br/>Questions] --> D[✅ Check<br/>Answers] --> E[🔄 Repeat]
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#f3e5f5
-    style D fill:#e8f5e9
-    style E fill:#fce4ec
+### Procedure Flow
 ```
-
-**Challenge Categories:**
-- ⚡ **Rapid Fire Quiz** → Multiple-choice questions
-- 🧠 **Advanced Concepts** → Complex theoretical problems
-- ✏️ **Fill in the Blanks** → Complete statements
-- 🔢 **Calculations** → Solve numerical problems
-- 🔗 **Matching Exercise** → Connect related concepts
+📱 Open Challenges Tab  →  📝 Pick Category  →  ✍️ Answer  →  ✅ Check  →  🔄 Try Next
+                                  ↓
+                    Quiz / Concepts / Blanks / Calculations / Matching
+```
 
 ### Steps
 1. **Access Challenges Tab**: Click on the "Challenges" tab.
