@@ -223,6 +223,9 @@
             border: 2px solid rgba(139, 92, 246, 0.3);
             transition: all 0.3s ease;
             box-shadow: 0 4px 16px rgba(139, 92, 246, 0.1);
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
         }
 
         .control-group:hover {
@@ -249,7 +252,7 @@
         /* Custom slider */
         .slider {
             width: 100%;
-            height: 6px;
+            height: 8px;
             border-radius: 5px;
             background: linear-gradient(to right, #ede9fe, #f1f5f9, #ddd6fe);
             outline: none;
@@ -257,19 +260,45 @@
             -webkit-appearance: none;
             appearance: none;
             border: 1px solid rgba(99, 102, 241, 0.2);
+            pointer-events: auto !important;
+            position: relative;
+            z-index: 10;
+            cursor: pointer;
+            touch-action: none;
+        }
+
+        .slider::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            background: transparent;
+        }
+
+        .slider::-moz-range-track {
+            width: 100%;
+            height: 8px;
+            cursor: pointer;
+            background: transparent;
         }
 
         .slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            cursor: pointer;
+            cursor: grab;
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             border: 2px solid rgba(255, 255, 255, 0.9);
+            margin-top: -6px;
+            pointer-events: auto;
+        }
+
+        .slider::-webkit-slider-thumb:active {
+            cursor: grabbing;
+            transform: scale(1.1);
         }
 
         .slider::-webkit-slider-thumb:hover {
@@ -278,13 +307,18 @@
         }
 
         .slider::-moz-range-thumb {
-            width: 16px;
-            height: 16px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
             background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            cursor: pointer;
+            cursor: grab;
             border: 2px solid rgba(255, 255, 255, 0.9);
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+            pointer-events: auto;
+        }
+
+        .slider::-moz-range-thumb:active {
+            cursor: grabbing;
         }
 
         /* Custom select */
@@ -557,10 +591,10 @@
             position: fixed;
             max-width: 380px;
             min-width: 320px;
-            max-height: 90vh; /* Ensure popup doesn't exceed viewport height */
+            max-height: 75vh; /* More compact height */
             background: white;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             z-index: 202;
             transform: scale(0.8) translateY(20px);
             opacity: 0;
@@ -580,50 +614,52 @@
         .tour-header {
             background: linear-gradient(135deg, #6366f1, #8b5cf6);
             color: white;
-            padding: 20px;
+            padding: 12px 16px;
             position: relative;
         }
 
         .tour-step-number {
             position: absolute;
-            top: 15px;
-            right: 20px;
+            top: 10px;
+            right: 16px;
             background: rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            padding: 5px 12px;
-            font-size: 0.8rem;
+            border-radius: 12px;
+            padding: 3px 8px;
+            font-size: 0.7rem;
             font-weight: 600;
         }
 
         .tour-title {
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 700;
             margin: 0;
-            padding-right: 60px;
+            padding-right: 50px;
         }
 
         .tour-content {
-            padding: 20px;
-            line-height: 1.6;
+            padding: 14px 16px;
+            line-height: 1.5;
             color: #374151;
-            max-height: 60vh; /* Limit content height */
+            max-height: 45vh; /* More compact height */
             overflow-y: auto; /* Make content scrollable if needed */
+            font-size: 0.9rem;
         }
 
         .tour-challenge {
             background: #f8fafc;
-            border-radius: 8px;
-            padding: 15px;
-            margin: 15px 20px;
-            border-left: 4px solid #10b981;
+            border-radius: 6px;
+            padding: 10px 12px;
+            margin: 10px 16px;
+            border-left: 3px solid #10b981;
         }
 
         .tour-challenge-title {
             font-weight: 600;
             color: #1f2937;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             display: flex;
             align-items: center;
+            font-size: 0.85rem;
         }
 
         .tour-challenge-title i {
@@ -633,13 +669,13 @@
 
         .tour-challenge-content {
             color: #6b7280;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
         }
 
         .tour-progress {
-            height: 4px;
+            height: 3px;
             background: #e5e7eb;
-            margin: 0 20px;
+            margin: 0 16px;
         }
 
         .tour-progress-bar {
@@ -650,12 +686,12 @@
         }
 
         .tour-controls {
-            padding: 20px;
+            padding: 12px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-top: 1px solid #e5e7eb;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
@@ -664,13 +700,13 @@
         }
 
         .tour-btn {
-            padding: 10px 20px;
+            padding: 8px 14px;
             border: none;
-            border-radius: 8px;
+            border-radius: 6px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
-            font-size: 0.9rem;
+            font-size: 0.82rem;
         }
 
         .tour-btn-primary {
@@ -686,8 +722,8 @@
         .tour-btn-skip {
             background: linear-gradient(135deg, #ef4444, #dc2626);
             color: white;
-            font-size: 0.8rem;
-            padding: 8px 16px;
+            font-size: 0.75rem;
+            padding: 6px 12px;
             opacity: 0.9;
             margin-left: auto;
         }
@@ -2370,6 +2406,13 @@
                         "Electrostatic attraction lowering barrier height", 
                         "Emission of electrons over potential barrier",
                         "Parameter describing deviation from ideal diode behavior"
+                    ],
+                    // Multiple valid answers - each array maps to the corresponding term index
+                    validMatches: [
+                        [0], // Schottky Barrier -> definition 0
+                        [1], // Image Force -> definition 1
+                        [2], // Thermionic Emission -> definition 2
+                        [3]  // Ideality Factor -> definition 3
                     ]
                 }
             ]
@@ -2591,14 +2634,7 @@
                     reward: 160,
                     secondary_highlight: "#rippleFactor"
                 },
-                position: "bottom"
-            },
-            {
-                title: "Why Schottky Diodes Excel in Rectifiers 🚀",
-                content: "**Schottky vs PN Junction Diodes in Rectification**:\n\n⚡ **Lower Forward Voltage Drop**:\n• Schottky: 0.2-0.4V vs PN: 0.7V\n• Result: Higher efficiency, less power loss\n\n🏃 **Faster Switching Speed**:\n• No minority carrier storage\n• Majority carrier operation only\n• Perfect for high-frequency rectification\n\n🎯 **Applications Where Schottky Wins**:\n• Switch-mode power supplies (high frequency)\n• RF detectors and mixers\n• Solar cell bypass diodes\n• High-efficiency voltage regulators\n\n📊 **Trade-off**: Higher reverse leakage current than PN diodes",
-                target: "#applicationType",
-                challenge: null,
-                position: "right"
+                position: "left"
             },
             {
                 title: "🎯 Challenge 8: Test Your Mastery!",
@@ -2811,6 +2847,21 @@
             if (selectedQuestions.matching.length === 0) return;
             
             const matchingData = selectedQuestions.matching[0];
+            
+            // Shuffle arrays for non-linear display
+            const shuffledTerms = matchingData.terms.map((term, index) => ({ term, index }));
+            const shuffledDefs = matchingData.definitions.map((def, index) => ({ def, index }));
+            
+            // Fisher-Yates shuffle algorithm
+            for (let i = shuffledTerms.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledTerms[i], shuffledTerms[j]] = [shuffledTerms[j], shuffledTerms[i]];
+            }
+            for (let i = shuffledDefs.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledDefs[i], shuffledDefs[j]] = [shuffledDefs[j], shuffledDefs[i]];
+            }
+            
             let html = `
                 <div class="matching-container" id="matchingContainer">
                     <svg class="matching-lines-svg" id="matchingLinesSvg">
@@ -2818,17 +2869,17 @@
                     </svg>
                     <div class="matching-column">
                         <h4>Terms</h4>
-                        ${matchingData.terms.map((term, index) => `
-                            <div class="matching-item" data-type="term" data-id="${index}" onclick="selectMatchingItem(this)">
-                                ${term}
+                        ${shuffledTerms.map(item => `
+                            <div class="matching-item" data-type="term" data-id="${item.index}" onclick="selectMatchingItem(this)">
+                                ${item.term}
                             </div>
                         `).join('')}
                     </div>
                     <div class="matching-column">
                         <h4>Definitions</h4>
-                        ${matchingData.definitions.map((def, index) => `
-                            <div class="matching-item" data-type="definition" data-id="${index}" onclick="selectMatchingItem(this)">
-                                ${def}
+                        ${shuffledDefs.map(item => `
+                            <div class="matching-item" data-type="definition" data-id="${item.index}" onclick="selectMatchingItem(this)">
+                                ${item.def}
                             </div>
                         `).join('')}
                     </div>
@@ -2860,7 +2911,17 @@
         }
 
         function selectMatchingItem(element) {
-            if (element.classList.contains('matched')) return;
+            // Allow double-click to remove matched items
+            if (element.classList.contains('matched')) {
+                // Find the connection ID for this matched item
+                for (const [id, connection] of Object.entries(connectionLines)) {
+                    if (connection.item1 === element || connection.item2 === element) {
+                        removeMatchingPair(parseInt(id));
+                        break;
+                    }
+                }
+                return;
+            }
             
             if (selectedMatchingItems.length === 0) {
                 selectedMatchingItems.push(element);
@@ -2897,19 +2958,6 @@
             
             // Draw connection line with a small delay to ensure proper positioning
             setTimeout(() => drawConnectionLine(item1, item2, connectionId), 10);
-            
-            // Add remove button
-            const removeBtn = document.createElement('span');
-            removeBtn.innerHTML = ' ✕';
-            removeBtn.style.cursor = 'pointer';
-            removeBtn.style.color = '#ef4444';
-            removeBtn.style.fontWeight = 'bold';
-            removeBtn.style.marginLeft = '10px';
-            removeBtn.onclick = (e) => {
-                e.stopPropagation();
-                removeMatchingPair(connectionId);
-            };
-            item1.appendChild(removeBtn);
         }
 
         function drawConnectionLine(item1, item2, connectionId) {
@@ -2974,10 +3022,6 @@
             if (connection) {
                 connection.item1.classList.remove('matched', 'correct-match', 'incorrect-match');
                 connection.item2.classList.remove('matched', 'correct-match', 'incorrect-match');
-                
-                // Remove the X button
-                const removeBtn = connection.item1.querySelector('span');
-                if (removeBtn) removeBtn.remove();
                 
                 // Remove the visual line
                 const svg = document.getElementById('matchingLinesSvg');
@@ -3167,7 +3211,11 @@
                 
                 const line = svg ? svg.querySelector(`[data-connection-id="${connection.connectionId}"]`) : null;
                 
-                if (termId === defId) {
+                // Check if this connection is valid (supports multiple correct answers)
+                const validMatches = matchingData.validMatches || [];
+                const isCorrect = validMatches[termId] && validMatches[termId].includes(defId);
+                
+                if (isCorrect) {
                     correct++;
                     connection.item1.classList.add('correct-match');
                     connection.item2.classList.add('correct-match');
@@ -3525,6 +3573,10 @@
             selectRandomQuestions();
             generateChallengeContent();
             updateChallengeStats();
+            
+            // Initialize applications so rectifier is ready when tab is opened
+            showHideApplicationControls();
+            updateApplicationsParameters();
         }
 
         // Create background particles
@@ -3795,7 +3847,11 @@
 
             // Update display values
             safeSetValue('workFunctionValue', workFunction.toFixed(1) + ' eV');
-            safeSetValue('dopingValue', '10¹' + dopingConc.toFixed(0) + ' cm⁻³');
+            // Format doping concentration with proper superscript
+            const dopingExp = dopingConc.toFixed(0);
+            const superscriptMap = {'0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};
+            const dopingSuper = dopingExp.split('').map(c => superscriptMap[c] || c).join('');
+            safeSetValue('dopingValue', '10' + dopingSuper + ' cm⁻³');
             safeSetValue('tempValue', temperature + ' K');
 
             const params = calculateJunctionParameters();
@@ -3932,36 +3988,46 @@
 
             const params = calculateJunctionParameters();
             const semiconductorType = safeGetElement('semiconductorType')?.value || 'n-type';
+            const dopingConc = safeGetValue('dopingConc', 16);
 
             canvas.innerHTML = `
                 <div style="position: relative; width: 100%; height: 100%; padding: 20px;">
                     <!-- Metal region -->
-                    <div class="junction-region metal-region" style="left: 5%; top: 10%; width: 25%; height: 35%; color: white; font-weight: 600;">
-                        <div>
-                            <div>Metal</div>
-                            <div style="font-size: 0.8em; opacity: 0.8;">φₘ = ${safeGetElement('workFunctionValue')?.textContent || '4.5 eV'}</div>
+                    <div class="junction-region metal-region" style="left: 5%; top: 10%; width: 25%; height: 35%; color: #ffffff; font-weight: 900; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.2em; text-shadow: 0 3px 8px rgba(0,0,0,1), 0 0 10px rgba(0,0,0,0.8); margin-bottom: 8px; letter-spacing: 0.5px;">Metal</div>
+                            <div style="font-size: 0.95em; text-shadow: 0 2px 6px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.7); white-space: nowrap;">φₘ = ${safeGetElement('workFunctionValue')?.textContent || '4.5 eV'}</div>
                         </div>
                         ${generateChargeCarriers('metal', 8)}
                     </div>
 
                     <!-- Depletion region -->
-                    <div class="junction-region depletion-region" style="left: 30%; top: 10%; width: 15%; height: 35%; color: white; font-weight: 600;">
-                        <div style="font-size: 0.9em;">Depletion</div>
+                    ${(() => {
+                        const depletionWidth = Math.max(10, Math.min(25, 25 - (dopingConc - 14) * 2));
+                        const depletionLeft = 30;
+                        const semiLeft = depletionLeft + depletionWidth;
+                        const semiWidth = 95 - semiLeft;
+                        return `
+                    <div class="junction-region depletion-region" style="left: ${depletionLeft}%; top: 10%; width: ${depletionWidth}%; height: 35%; color: #0f172a; font-weight: 900; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="font-size: 1.1em; text-shadow: 0 2px 6px rgba(255,255,255,1), 0 0 8px rgba(255,255,255,0.8); margin-bottom: 6px;">Depletion</div>
+                        <div style="font-size: 0.85em; text-shadow: 0 2px 4px rgba(255,255,255,1), 0 0 6px rgba(255,255,255,0.7); white-space: nowrap;">W = ${(() => { const w = params.depletionWidth.toString().match(/[0-9.]+/); return w ? parseFloat(w[0]).toFixed(2) : '0.00'; })()} μm</div>
                         ${generateDepletionCharges()}
                     </div>
 
                     <!-- Semiconductor region -->
-                    <div class="junction-region semiconductor-region" style="left: 45%; top: 10%; width: 50%; height: 35%; color: white; font-weight: 600;">
-                        <div>
-                            <div>${semiconductorType.toUpperCase()} Semiconductor</div>
-                            <div style="font-size: 0.8em; opacity: 0.8;">Nₐ = ${safeGetElement('dopingValue')?.textContent || '10¹⁶ cm⁻³'}</div>
+                    <div class="junction-region semiconductor-region" style="left: ${semiLeft}%; top: 10%; width: ${semiWidth}%; height: 35%; color: #ffffff; font-weight: 900; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 1.15em; text-shadow: 0 3px 8px rgba(0,0,0,1), 0 0 10px rgba(0,0,0,0.8); margin-bottom: 8px; white-space: nowrap; letter-spacing: 0.5px;">${semiconductorType.toUpperCase()} Semiconductor</div>
+                            <div style="font-size: 0.95em; text-shadow: 0 2px 6px rgba(0,0,0,1), 0 0 8px rgba(0,0,0,0.7); white-space: nowrap;">Nₐ = ${safeGetElement('dopingValue')?.textContent || '10¹⁶ cm⁻³'}</div>
                         </div>
                         ${generateChargeCarriers('semiconductor', 6)}
                     </div>
+                        `;
+                    })()}
 
                     <!-- Energy band diagram -->
-                    <div style="position: absolute; left: 5%; top: 55%; width: 90%; height: 40%; background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); padding: 15px;">
-                        <div style="color: #94a3b8; font-weight: 600; margin-bottom: 10px; text-align: center;">Energy Band Diagram</div>
+                    <div style="position: absolute; left: 2%; top: 50%; width: 96%; height: 48%; background: rgba(15,23,42,0.92); border-radius: 12px; border: 2px solid rgba(148,163,184,0.5); padding: 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.4);">
+                        <div style="color: #f8fafc; font-weight: 800; margin-bottom: 12px; text-align: center; font-size: 1.2em; text-shadow: 0 2px 6px rgba(0,0,0,0.9); letter-spacing: 0.5px;">Energy Band Diagram</div>
                         ${generateEnergyBands(params)}
                     </div>
                 </div>
@@ -4047,33 +4113,33 @@
             
             return `
                 <!-- Energy scale reference -->
-                <div style="position: absolute; left: 2%; top: 10%; color: #94a3b8; font-size: 10px; transform: rotate(-90deg);">
+                <div style="position: absolute; left: 2%; top: 10%; color: #f8fafc; font-size: 14px; font-weight: 800; transform: rotate(-90deg); text-shadow: 0 2px 6px rgba(0,0,0,1);">
                     Energy (eV)
                 </div>
                 
                 <!-- Fermi level (aligned across junction) -->
-                <div style="position: absolute; left: 8%; top: ${metalFermi}%; width: 88%; height: 2px; background: #ef4444; z-index: 3; border-top: 2px dashed rgba(255,255,255,0.7);"></div>
-                <div style="position: absolute; right: 1%; top: ${metalFermi-1}%; color: #ef4444; font-size: 11px; font-weight: 600;">EF</div>
+                <div style="position: absolute; left: 8%; top: ${metalFermi}%; width: 88%; height: 3px; background: #ef4444; z-index: 3; border-top: 2px dashed #fef2f2; box-shadow: 0 0 10px rgba(239,68,68,0.7);"></div>
+                <div style="position: absolute; right: 1%; top: ${metalFermi-1.5}%; color: #fef2f2; font-size: 16px; font-weight: 900; text-shadow: 0 2px 8px rgba(0,0,0,1), 0 0 12px rgba(239,68,68,0.6); background: rgba(239,68,68,0.4); padding: 2px 8px; border-radius: 4px;">EF</div>
 
                 <!-- Vacuum level reference line -->
-                <div style="position: absolute; left: 8%; top: 15%; width: 88%; height: 1px; background: rgba(255,255,255,0.3); z-index: 1;"></div>
-                <div style="position: absolute; right: 1%; top: 14%; color: rgba(255,255,255,0.6); font-size: 9px;">Evac</div>
+                <div style="position: absolute; left: 8%; top: 15%; width: 88%; height: 2px; background: rgba(241,245,249,0.7); z-index: 1;"></div>
+                <div style="position: absolute; right: 1%; top: 13.5%; color: #f8fafc; font-size: 14px; font-weight: 800; text-shadow: 0 2px 6px rgba(0,0,0,1);">Evac</div>
 
                 <!-- Metal region -->
-                <div style="position: absolute; left: 8%; top: 20%; width: 22%; height: 60%; border-right: 2px solid rgba(255,255,255,0.3); background: rgba(99,102,241,0.1);">
-                    <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); color: #6366f1; font-size: 10px; font-weight: 600;">Metal</div>
-                    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: #60a5fa; font-size: 9px;">φm = ${workFunction.toFixed(1)} eV</div>
+                <div style="position: absolute; left: 8%; top: 20%; width: 22%; height: 60%; border-right: 3px solid rgba(165,180,252,0.7); background: rgba(99,102,241,0.25);">
+                    <div style="position: absolute; top: 6%; left: 50%; transform: translateX(-50%); color: #ffffff; font-size: 15px; font-weight: 900; text-shadow: 0 3px 10px rgba(0,0,0,1), 0 0 12px rgba(99,102,241,0.6); white-space: nowrap;">Metal</div>
+                    <div style="position: absolute; top: 22%; left: 50%; transform: translateX(-50%); color: #e0e7ff; font-size: 12px; font-weight: 800; text-shadow: 0 2px 8px rgba(0,0,0,1); white-space: nowrap;">φm = ${workFunction.toFixed(1)} eV</div>
                 </div>
 
                 <!-- Junction/Depletion region -->
-                <div style="position: absolute; left: 30%; top: 20%; width: 40%; height: 60%; background: rgba(245,158,11,0.1); border-left: 2px solid rgba(245,158,11,0.5); border-right: 2px solid rgba(245,158,11,0.5);">
-                    <div style="position: absolute; top: 5%; left: 50%; transform: translateX(-50%); color: #f59e0b; font-size: 9px; font-weight: 600;">Depletion</div>
+                <div style="position: absolute; left: 30%; top: 20%; width: 40%; height: 60%; background: rgba(245,158,11,0.25); border-left: 3px solid rgba(251,191,36,0.8); border-right: 3px solid rgba(251,191,36,0.8);">
+                    <div style="position: absolute; top: 3%; left: 50%; transform: translateX(-50%); color: #fffbeb; font-size: 15px; font-weight: 900; text-shadow: 0 3px 10px rgba(0,0,0,1), 0 0 12px rgba(245,158,11,0.6); white-space: nowrap;">Depletion</div>
                 </div>
 
                 <!-- Semiconductor region -->
-                <div style="position: absolute; left: 70%; top: 20%; width: 26%; height: 60%; border-left: 2px solid rgba(255,255,255,0.3); background: rgba(16,185,129,0.1);">
-                    <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); color: #10b981; font-size: 10px; font-weight: 600;">${semiconductorType.toUpperCase()}</div>
-                    <div style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); color: #34d399; font-size: 9px;">N = 10¹⁶ cm⁻³</div>
+                <div style="position: absolute; left: 70%; top: 20%; width: 26%; height: 60%; border-left: 3px solid rgba(110,231,183,0.7); background: rgba(16,185,129,0.25);">
+                    <div style="position: absolute; top: 6%; left: 50%; transform: translateX(-50%); color: #ffffff; font-size: 15px; font-weight: 900; text-shadow: 0 3px 10px rgba(0,0,0,1), 0 0 12px rgba(16,185,129,0.6); white-space: nowrap;">${semiconductorType.toUpperCase()}</div>
+                    <div style="position: absolute; top: 22%; left: 50%; transform: translateX(-50%); color: #d1fae5; font-size: 12px; font-weight: 800; text-shadow: 0 2px 8px rgba(0,0,0,1); white-space: nowrap;">N = 10¹⁶ cm⁻³</div>
                 </div>
 
                 <!-- Energy bands using SVG for precision -->
@@ -4116,22 +4182,22 @@
                     <line x1="140" y1="160" x2="180" y2="160" stroke="#6366f1" stroke-width="2" marker-end="url(#fieldArrowEq)" opacity="0.4"/>
                     
                     <!-- Band labels -->
-                    <text x="390" y="${120 + semiEc_bulk_y - metalFermi - 5}" fill="#10b981" font-size="12" font-weight="bold">Ec</text>
-                    <text x="390" y="${120 + semiEv_bulk_y - metalFermi + 15}" fill="#3b82f6" font-size="12" font-weight="bold">Ev</text>
+                    <text x="390" y="${120 + semiEc_bulk_y - metalFermi - 5}" fill="#d1fae5" font-size="17" font-weight="bold" style="text-shadow: 0 3px 8px rgba(0,0,0,1), 0 0 10px rgba(16,185,129,0.7); paint-order: stroke; stroke: rgba(0,0,0,0.8); stroke-width: 1px;">Ec</text>
+                    <text x="390" y="${120 + semiEv_bulk_y - metalFermi + 15}" fill="#dbeafe" font-size="17" font-weight="bold" style="text-shadow: 0 3px 8px rgba(0,0,0,1), 0 0 10px rgba(59,130,246,0.7); paint-order: stroke; stroke: rgba(0,0,0,0.8); stroke-width: 1px;">Ev</text>
                 </svg>
 
                 <!-- Barrier height indication -->
-                <div style="position: absolute; left: 25%; top: ${25 + (semiEc_surface_y - metalFermi)/4}%; color: #f59e0b; font-size: 10px; font-weight: 600; background: rgba(0,0,0,0.7); padding: 2px 6px; border-radius: 4px;">
+                <div style="position: absolute; left: 22%; top: ${32 + (semiEc_surface_y - metalFermi)/4}%; color: #fef3c7; font-size: 13px; font-weight: 900; background: rgba(0,0,0,0.95); padding: 5px 10px; border-radius: 8px; border: 2px solid #fbbf24; text-shadow: 0 2px 6px rgba(0,0,0,1); box-shadow: 0 4px 16px rgba(0,0,0,0.6), 0 0 16px rgba(251,191,36,0.4); white-space: nowrap;">
                     φB = ${params.barrierHeight.toFixed(2)} eV
                 </div>
 
                 <!-- Built-in potential indication -->
-                <div style="position: absolute; left: 45%; top: 85%; color: #a855f7; font-size: 10px; font-weight: 600; background: rgba(0,0,0,0.7); padding: 2px 6px; border-radius: 4px;">
+                <div style="position: absolute; left: 43%; top: 88%; color: #f3e8ff; font-size: 13px; font-weight: 900; background: rgba(0,0,0,0.95); padding: 5px 10px; border-radius: 8px; border: 2px solid #c084fc; text-shadow: 0 2px 6px rgba(0,0,0,1); box-shadow: 0 4px 16px rgba(0,0,0,0.6), 0 0 16px rgba(168,85,247,0.4); white-space: nowrap;">
                     Vbi = ${params.builtInPotential.toFixed(2)} V
                 </div>
 
                 <!-- Electric field label -->
-                <div style="position: absolute; left: 35%; top: 25%; color: #6366f1; font-size: 10px; font-weight: 600;">
+                <div style="position: absolute; left: 51%; top: 38%; color: #a5b4fc; font-size: 12px; font-weight: 800; text-shadow: 0 2px 6px rgba(0,0,0,1); white-space: nowrap; opacity: 0.9;">
                     <i class="fas fa-bolt"></i> E-field
                 </div>
             `;
@@ -5154,10 +5220,16 @@
             const step = tourSteps[currentTourStep];
             console.log(`Showing tour step ${currentTourStep}: ${step.title}`);
             
+            // Helper function to convert markdown bold to HTML
+            const convertMarkdown = (text) => {
+                return text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                           .replace(/\n/g, '<br>');
+            };
+            
             // Update tour popup content
             document.getElementById('tourStepNumber').textContent = `${currentTourStep + 1}/${tourSteps.length}`;
-            document.getElementById('tourTitle').textContent = step.title;
-            document.getElementById('tourContent').textContent = step.content;
+            document.getElementById('tourTitle').innerHTML = convertMarkdown(step.title);
+            document.getElementById('tourContent').innerHTML = convertMarkdown(step.content);
             document.getElementById('tourProgressBar').style.width = `${((currentTourStep + 1) / tourSteps.length) * 100}%`;
             
             // Handle challenge content
@@ -5167,7 +5239,7 @@
             if (step.challenge) {
                 challengeDiv.style.display = 'block';
                 hintBtn.style.display = 'inline-block';
-                document.getElementById('tourChallengeContent').textContent = step.challenge.instruction;
+                document.getElementById('tourChallengeContent').innerHTML = convertMarkdown(step.challenge.instruction);
                 startChallengeMonitoring(step.challenge);
             } else {
                 challengeDiv.style.display = 'none';
