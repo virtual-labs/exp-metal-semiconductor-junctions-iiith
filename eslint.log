@@ -1,0 +1,11 @@
+
+/home/runner/work/exp-metal-semiconductor-junctions-iiith/exp-metal-semiconductor-junctions-iiith/experiment/simulation/Old/js/sim.js
+  6:10  warning  'runSimulation' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-metal-semiconductor-junctions-iiith/exp-metal-semiconductor-junctions-iiith/experiment/simulation/mobile-detection.js
+  283:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  286:38  warning  'module' is not defined                               no-undef
+  287:3   warning  'module' is not defined                               no-undef
+
+✖ 4 problems (0 errors, 4 warnings)
+

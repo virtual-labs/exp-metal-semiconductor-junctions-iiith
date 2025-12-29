@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. What is the work function of a material?",
+      "answers": {
+        "a": "The energy required to break a covalent bond",
+        "b": "The energy required to move an electron from the conduction band to the vacuum level",
+        "c": "The bandgap energy of the material",
+        "d": "The energy to create an electron-hole pair"
+      },
+      "explanations": {
+        "a": "Incorrect. That's bond energy, not work function.",
+        "b": "Correct. Work function is defined as the minimum energy needed to remove an electron from the Fermi level to vacuum.",
+        "c": "Incorrect. That’s the bandgap energy.",
+        "d": "Incorrect. That's related to carrier generation, not work function."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. What is electron affinity in a semiconductor?",
+      "answers": {
+        "a": "The energy gap between conduction and valence bands",
+        "b": "The energy required to excite an electron from the valence to conduction band",
+        "c": "The energy difference between the conduction band and vacuum level",
+        "d": "The energy required to ionize a dopant"
+      },
+      "explanations": {
+        "a": "Incorrect. That’s the bandgap.",
+        "b": "Incorrect. That’s excitation energy.",
+        "c": "Correct. Electron affinity is the energy required to move an electron from the conduction band to vacuum level.",
+        "d": "Incorrect. That’s ionization energy."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. What type of contact is formed when metal work function is less than n-type semiconductor's electron affinity?",
+      "answers": {
+        "a": "Schottky contact",
+        "b": "Ohmic contact",
+        "c": "p-n junction",
+        "d": "No contact is formed"
+      },
+      "explanations": {
+        "a": "Incorrect. A Schottky contact is formed when metal work function > semiconductor.",
+        "b": "Correct. Lower metal work function compared to semiconductor forms Ohmic contact with n-type.",
+        "c": "Incorrect. This is not a p-n junction.",
+        "d": "Incorrect. A contact is still formed."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In a Metal-Semiconductor junction with an n-type semiconductor, increasing the forward bias results in:",
+      "answers": {
+        "a": "Wider depletion region and lower current",
+        "b": "Smaller barrier height and increased current",
+        "c": "No change in current",
+        "d": "Breakdown of the junction"
+      },
+      "explanations": {
+        "a": "Incorrect. Forward bias reduces depletion width.",
+        "b": "Correct. Forward bias lowers the potential barrier, increasing carrier injection.",
+        "c": "Incorrect. Current increases significantly under forward bias.",
+        "d": "Incorrect. Breakdown occurs under high reverse bias."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. What would happen to the energy band diagram of an n-type MS junction under reverse bias?",
+      "answers": {
+        "a": "Conduction band bends downward",
+        "b": "Valence band shifts closer to Fermi level",
+        "c": "Conduction band bends upward increasing barrier",
+        "d": "Fermi level moves significantly"
+      },
+      "explanations": {
+        "a": "Incorrect. Reverse bias increases potential barrier, not decreases it.",
+        "b": "Incorrect. Valence band is unaffected in this way.",
+        "c": "Correct. Reverse bias bends the conduction band upward, increasing the barrier.",
+        "d": "Incorrect. Fermi level remains flat across the junction in equilibrium."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which factor does **not** directly affect the Schottky barrier height?",
+      "answers": {
+        "a": "Metal work function",
+        "b": "Semiconductor electron affinity",
+        "c": "Semiconductor doping concentration",
+        "d": "Semiconductor dielectric constant"
+      },
+      "explanations": {
+        "a": "Incorrect. Metal work function is key in defining barrier height.",
+        "b": "Incorrect. Electron affinity plays a role.",
+        "c": "Correct. Doping influences width, not barrier height directly.",
+        "d": "Incorrect. Dielectric constant affects capacitance, not barrier height."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. A metal has work function φ<sub>m</sub> = 5.1 eV, and the n-type semiconductor has electron affinity χ = 4.0 eV and E<sub>c</sub> – E<sub>F</sub> = 0.2 eV. What is the Schottky barrier height (φ<sub>Bn</sub>)?",
+      "answers": {
+        "a": "1.1 eV",
+        "b": "0.7 eV",
+        "c": "2.0 eV",
+        "d": "5.3 eV"
+      },
+      "explanations": {
+        "a": "Correct. φ<sub>Bn</sub> = φ<sub>m</sub> – χ = 5.1 – 4.0 = 1.1 eV",
+        "b": "Incorrect. Calculation is off.",
+        "c": "Incorrect. That’s too large.",
+        "d": "Incorrect. Greater than φ<sub>m</sub>, so invalid."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. A metal forms a Schottky junction with a semiconductor. If the temperature increases, how does the reverse saturation current behave?",
+      "answers": {
+        "a": "It increases exponentially",
+        "b": "It stays constant",
+        "c": "It decreases linearly",
+        "d": "It becomes zero"
+      },
+      "explanations": {
+        "a": "Correct. Reverse saturation current increases exponentially with temperature.",
+        "b": "Incorrect. It is temperature dependent.",
+        "c": "Incorrect. Not linear dependence.",
+        "d": "Incorrect. It never becomes zero."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. In the MS junction simulation, varying the doping level affects which of the following most significantly?",
+      "answers": {
+        "a": "The metal's work function",
+        "b": "The width of the depletion region",
+        "c": "The bandgap of the semiconductor",
+        "d": "The vacuum level"
+      },
+      "explanations": {
+        "a": "Incorrect. Metal work function is intrinsic.",
+        "b": "Correct. Higher doping leads to narrower depletion regions.",
+        "c": "Incorrect. Bandgap is a material property, unaffected by doping.",
+        "d": "Incorrect. Vacuum level is a fixed energy reference."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
